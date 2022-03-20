@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .animation-ex1 {
+         border:2px solid black;
+         position:relative;
+         width:200px;
+         height:200px;
+         border-radius: 100%;
+         background-color:deepskyblue;
+         -webkit-animation-name:ex1-keyframerules;
+         animation-name:ex1-keyframerules;
+         -webkit-animation-duration:4s;
+         animation-duration:4s;
+        }
+        
+        @-webkit-keyframes ex1-keyframerules {
+         0% {background-color:deepskyblue; top:0px;}
+         50% {background-color:crimson; top:200px;}
+         100% {background-color:gold; top:0px;}
+        }
+        
+        @keyframes ex1-keyframerules {
+         0% {background-color:deepskyblue; top:0px;}
+         50% {background-color:crimson; top:200px;}
+         100% {background-color:gold; top:0px;}
+        }
+    </style>
+</head>
+<body>
+    <h2> Example for animation animation @keyframes Rules</h2>
+    <div class="animation-ex1"></div>
+</body>
+</html>

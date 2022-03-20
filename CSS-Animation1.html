@@ -1,0 +1,29 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+<style>   
+div {  
+    width: 100px;  
+    height: 100px;  
+    background: red;  
+    -webkit-animation: myfirst 6s; /* Chrome, Safari, Opera */  
+    animation: myfirst 5s;  
+}  
+/* Chrome, Safari, Opera */  
+@-webkit-keyframes myfirst {  
+    from {background: red;}  
+    to {background: black;}  
+}  
+/* Standard syntax */  
+@keyframes myfirst {  
+    from {background: red;}  
+    to {background: black;}  
+}  
+</style>  
+</head>  
+<body>  
+<p><b>Note:</b> The IE 9 and earlier versions don't support CSS3 animation property. </p>  
+<p>See the rectangle background from RED to BLACK.</p>
+<div></div>  
+</body>  
+</html>  

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        img {
+           position:relative;
+           height:100px;
+           -webkit-animation-name:val1-direction;
+           animation-name:val1-direction;
+           -webkit-animation-duration:4s;
+           animation-duration:4s;
+		   animation-iteration-count:2;
+		   -webkit-animation-iteration-count:2;
+        }
+        .normal{animation-direction: normal;}
+        .reverse{animation-direction: reverse;}
+        .alternate{animation-direction: alternate;}
+        .alternate-rev{animation-direction: alternate-reverse;}
+        
+        @-webkit-keyframes val1-direction {
+           from {left:0px; }
+           to {left:200px;}
+        }
+        
+        @keyframes val1-direction {
+           from {left:0px;}
+           to  {left:200px;}
+        }
+    </style>
+</head>
+<body>
+    <h2>Example of CSS animation-direction Property</h2>
+    <img src="https://i.ibb.co/6WKgPPZ/bird-one.png" class="normal"><br>
+    <img src="https://i.ibb.co/DG9BNqj/bird-two.png" class="reverse"><br>
+    <img src="https://i.ibb.co/6WKgPPZ/bird-one.png" class="alternate"><br>
+    <img src="https://i.ibb.co/DG9BNqj/bird-two.png" class="alternate-rev">
+</body>
+</html>

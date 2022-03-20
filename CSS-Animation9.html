@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .main-val {
+           width:150px;
+           border:2px solid black;
+           background:hotpink;
+           height:100px;
+           -webkit-animation-name:val1-delay;
+           animation-name:val1-delay;
+           -webkit-animation-duration:3sc;
+           animation-duration:3sc;
+           -webkit-animation-delay:2sc;
+           animation-delay:3sc;
+        }
+        
+        @-webkit-keyframes val1-delay {
+           0%  {width:150px;}
+           50% {width:250px;}
+          100% {width:300px;}
+        }
+        
+        @keyframes val1-delay {
+           0%  {width:150px;}
+           50% {width:250px;}
+          100% {width:300px;}
+        }
+    </style>
+</head>
+<body>
+    <h2>Example of CSS animation-delay Property</h2>
+    <p> The animation-delay property is set to 2 seconds. So the given animation property will start after two seconds of page loading</p>
+    <div class="main-val"></div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .animation-from-to {
+         border:2px solid black;
+         position:relative;
+         width:200px;
+         height:200px;
+         border-radius: 100%;
+         background-color:deepskyblue;
+         -webkit-animation-name:ex1-keyframerules-from-to;
+         animation-name:ex1-keyframerules-from-to;
+         -webkit-animation-duration:4s;
+         animation-duration:4s;
+        }
+        
+        @keyframes ex1-keyframerules-from-to {
+         from {background-color:deepskyblue; top:0px;}
+         to {background-color:gold; top:200px;}
+        }
+        
+        @-webkit-keyframes ex1-keyframerules-from-to {
+         from {background-color:deepskyblue; top:0px;}
+         to {background-color:gold; top:200px;}
+        }
+    </style>
+</head>
+<body>
+    <h2> Example for animation animation @keyframes Rules</h2>
+    <div class="animation-from-to"></div>
+</body>
+</html>

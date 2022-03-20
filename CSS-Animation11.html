@@ -1,0 +1,33 @@
+!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+           position:relative;
+           background:linear-gradient(cyan, dodgerblue);
+           width:200px;
+           height:100px;
+           -webkit-animation-name:val-fadein;
+           animation-name:val-fadein;
+           -webkit-animation-duration:5s;
+           animation-duration:5s;
+           animation-timing-function:ease-in;
+        }
+        
+        @-webkit-keyframes val-fadein {
+           0% {left:0px; opacity:1;}
+           100% {left:200px; opacity:0;}
+        }
+        
+        @keyframes val-fadein {
+           0% {left:0px; opacity:1;}
+           100% {left:200px; opacity:0;}
+        }
+    </style>
+</head>
+<body>
+    <h2> Example of CSS Animation fade-in</h2>
+    <p>To create a fadein effect we need to use CSS animation-timing-function:ease-in; property</p>
+    <div></div>
+</body>
+</html>

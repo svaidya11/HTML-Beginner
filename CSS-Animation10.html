@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div {
+          position:relative;
+          width:100px;
+          text-align:center;
+          border-radius:5%;;
+          background:hotpink;
+          height:50px;
+          -webkit-animation-name:animation-function-val;
+          animation-name:animation-function-val;
+          -webkit-animation-duration:6s;
+		  animation-duration:6s;
+        }
+        .ease{animation-timing-function: ease;}
+        .linear{animation-timing-function: linear;}
+        .easein{animation-timing-function: ease-in;}
+        .easeout{animation-timing-function: ease-out;}
+        .easeinout{animation-timing-function: ease-in-out;}
+        
+        @-webkit-keyframes animation-function-val {
+            0% {left:0px;background-color:gold;}
+           100% {left:200px;background-color:hotpink;}
+        }
+        
+        @keyframes animation-function-val {
+            0% {left:0px;background-color:gold;}
+           100% {left:200px;background-color:hotpink;}
+        }
+    </style>
+</head>
+<body>
+    <h2>Example of CSS animation-timing-function Property</h2>
+    <div class="ease">EASE</div><br>
+    <div class="linear">LINEAR</div><br>
+    <div class="easein">EASE-IN</div><br>
+    <div class="easeout">EASE-OUT</div><br>
+    <div class="easeinout">EASE-IN-OUT</div>
+</body>
+</html>
